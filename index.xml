@@ -31,6 +31,16 @@ Currently, this is still a work in progress.</description>
     </item>
     
     <item>
+      <title>My third post</title>
+      <link>https://pminnebach.github.io/posts/my-third-post/</link>
+      <pubDate>Fri, 03 Jan 2020 01:43:48 +0100</pubDate>
+      
+      <guid>https://pminnebach.github.io/posts/my-third-post/</guid>
+      <description>This is a test to see how long it takes for github pages to deploy.
+It is now Januari 29, 23:09 CET</description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
       <link>https://pminnebach.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 03 Jan 2020 01:13:23 +0100</pubDate>

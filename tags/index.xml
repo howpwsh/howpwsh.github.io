@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on howP[O|W]SH</title>
-    <link>https://pminnebach.github.io/tags/</link>
+    <link>https://howpwsh.github.io/tags/</link>
     <description>Recent content in Tags on howP[O|W]SH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://pminnebach.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://howpwsh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

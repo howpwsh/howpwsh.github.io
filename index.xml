@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>howP[O|W]SH</title>
-    <link>https://pminnebach.github.io/</link>
+    <link>https://howpwsh.github.io/</link>
     <description>Recent content on howP[O|W]SH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jan 2020 22:47:22 +0100</lastBuildDate>
     
-	<atom:link href="https://pminnebach.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://howpwsh.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome</title>
-      <link>https://pminnebach.github.io/posts/welcome/</link>
+      <link>https://howpwsh.github.io/posts/welcome/</link>
       <pubDate>Wed, 29 Jan 2020 22:47:22 +0100</pubDate>
       
-      <guid>https://pminnebach.github.io/posts/welcome/</guid>
+      <guid>https://howpwsh.github.io/posts/welcome/</guid>
       <description>Welcome Welcome to my blog.
 Currently, this is still a work in progress.</description>
     </item>
     
     <item>
       <title>About.moi</title>
-      <link>https://pminnebach.github.io/about/</link>
+      <link>https://howpwsh.github.io/about/</link>
       <pubDate>Fri, 03 Jan 2020 01:46:53 +0100</pubDate>
       
-      <guid>https://pminnebach.github.io/about/</guid>
+      <guid>https://howpwsh.github.io/about/</guid>
       <description>Hello world, this is me. Life should be, pwsh on every system.</description>
     </item>
     
     <item>
       <title>My third post</title>
-      <link>https://pminnebach.github.io/posts/my-third-post/</link>
+      <link>https://howpwsh.github.io/posts/my-third-post/</link>
       <pubDate>Fri, 03 Jan 2020 01:43:48 +0100</pubDate>
       
-      <guid>https://pminnebach.github.io/posts/my-third-post/</guid>
+      <guid>https://howpwsh.github.io/posts/my-third-post/</guid>
       <description>This is a test to see how long it takes for github pages to deploy.
 It is now Januari 29, 23:09 CET</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://pminnebach.github.io/posts/my-first-post/</link>
+      <link>https://howpwsh.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 03 Jan 2020 01:13:23 +0100</pubDate>
       
-      <guid>https://pminnebach.github.io/posts/my-first-post/</guid>
+      <guid>https://howpwsh.github.io/posts/my-first-post/</guid>
       <description>Mission For now, this blog is merely a poc to test ci/cd using Github actions and/or Azure Devops pipelines. More content, such as actual blog posts, may be added in the future.
 1 2 3 4 5 6 7 8 9 10 11 12 13  Write-Host &amp;#34;Hello World!&amp;#34; -ForegroundColor Yellow function Do-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   Let&#39;s see if this kind of change is detected immediately.</description>
     </item>

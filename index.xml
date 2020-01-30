@@ -31,23 +31,13 @@ Currently, this is still a work in progress.</description>
     </item>
     
     <item>
-      <title>My third post</title>
-      <link>https://howpwsh.github.io/posts/my-third-post/</link>
-      <pubDate>Fri, 03 Jan 2020 01:43:48 +0100</pubDate>
-      
-      <guid>https://howpwsh.github.io/posts/my-third-post/</guid>
-      <description>This is a test to see how long it takes for github pages to deploy.
-It is now Januari 29, 23:09 CET</description>
-    </item>
-    
-    <item>
       <title>My First Post</title>
       <link>https://howpwsh.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 03 Jan 2020 01:13:23 +0100</pubDate>
       
       <guid>https://howpwsh.github.io/posts/my-first-post/</guid>
       <description>Mission For now, this blog is merely a poc to test ci/cd using Github actions and/or Azure Devops pipelines. More content, such as actual blog posts, may be added in the future.
-1 2 3 4 5 6 7 8 9 10 11 12 13  Write-Host &amp;#34;Hello World!&amp;#34; -ForegroundColor Yellow function Do-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   Let&#39;s see if this kind of change is detected immediately.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13  Write-Host &amp;#34;Hello World!&amp;#34; -ForegroundColor Yellow function Do-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   </description>
     </item>
     
   </channel>

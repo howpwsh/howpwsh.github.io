@@ -18,7 +18,7 @@
       
       <guid>https://howpwsh.github.io/posts/welcome/</guid>
       <description>Mission For now, this blog is merely a poc to test CI/CD using Github actions and/or Azure Devops pipelines. More content, such as actual blog posts, may be added in the future.
-1 2 3 4 5 6 7 8 9 10 11  Write-Host &amp;#34;Hello World!&amp;#34; -ForegroundColor Yellow function Do-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   And a check to see if PowerShell syntax highlighting works, and looks properly.</description>
+1 2 3 4 5 6 7 8 9 10 11  Write-Host &amp;#34;Hello World!&amp;#34; -ForegroundColor Yellow function Get-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   And a check to see if PowerShell syntax highlighting works, and looks properly.</description>
     </item>
     
     <item>

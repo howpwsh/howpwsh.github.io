@@ -309,7 +309,8 @@ More content, such as actual blog posts, may be added in the future.</p>
 </span><span class="cm"></span><span class="cm">#&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>And a check to see if PowerShell syntax highlighting works, and looks properly. The <code>chroma-powershellconsole.css</code> does a good job to make it look like the familiar Windows PowerShell shell.</p>
+</div><p>And a check to see if PowerShell syntax highlighting works, <del>and looks properly</del>. The <code>chroma-powershellconsole.css</code> <del>does a good job</del> doesn't do a half-bad job to make it look like the familiar Windows PowerShell shell.</p>
+<p>&ndash;&gt; Update feb 1: It seems that in the chroma lexer for PowerShell, too many keywords are thrown in the same category, so corrent syntax highlighting is not possible w/o changing the lexer.</p>
 <p>It's also a good way to spot unapproved verbs being used. In that case, the verb is bold, and the noun is not. :D
 Previous versions of this post post had <code>Do-Something</code> instead of <code>Get-Something</code>. So ladies and gentleman, always look at the approved list in <code>Get-Verb</code> when naming your functions.</p>
 <h2 id="future">Future</h2>

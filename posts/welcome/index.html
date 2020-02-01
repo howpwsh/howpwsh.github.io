@@ -12,11 +12,11 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Welcome"/>
 <meta name="twitter:description" content="Mission For now, this blog is merely a poc to test CI/CD using Github actions and/or Azure Devops pipelines. More content, such as actual blog posts, may be added in the future.
-1 2 3 4 5 6 7 8 9 10 11  Write-Host &#34;Hello World!&#34; -ForegroundColor Yellow function Get-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   And a check to see if PowerShell syntax highlighting works, and looks properly."/>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92  &lt;#."/>
 
     <meta property="og:title" content="Welcome" />
 <meta property="og:description" content="Mission For now, this blog is merely a poc to test CI/CD using Github actions and/or Azure Devops pipelines. More content, such as actual blog posts, may be added in the future.
-1 2 3 4 5 6 7 8 9 10 11  Write-Host &#34;Hello World!&#34; -ForegroundColor Yellow function Get-Something { [cmdletbinding()] param( [string]$param1 ) process { # Do something here } }   And a check to see if PowerShell syntax highlighting works, and looks properly." />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92  &lt;#." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://howpwsh.github.io/posts/welcome/" />
 <meta property="article:published_time" content="2020-01-29T22:47:22+01:00" />
@@ -107,7 +107,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              2 minutes read
+              3 minutes read
             </span>
           </div>
           
@@ -132,19 +132,181 @@ More content, such as actual blog posts, may be added in the future.</p>
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="s2">Hello World!</span><span class="s2">&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"> <span class="cm">&lt;#</span><span class="cm">
+</span><span class="cm"></span><span class="sd">.Synopsis</span><span class="cm">
+</span><span class="cm">   Short description
+</span><span class="cm"></span><span class="sd">.DESCRIPTION</span><span class="cm">
+</span><span class="cm">   Long description
+</span><span class="cm"></span><span class="sd">.EXAMPLE</span><span class="cm">
+</span><span class="cm">   Example of how to use this cmdlet
+</span><span class="cm"></span><span class="sd">.EXAMPLE</span><span class="cm">
+</span><span class="cm">   Another example of how to use this cmdlet
+</span><span class="cm"></span><span class="sd">.INPUTS</span><span class="cm">
+</span><span class="cm">   Inputs to this cmdlet (if any)
+</span><span class="cm"></span><span class="sd">.OUTPUTS</span><span class="cm">
+</span><span class="cm">   Output from this cmdlet (if any)
+</span><span class="cm"></span><span class="sd">.NOTES</span><span class="cm">
+</span><span class="cm">   General notes
+</span><span class="cm"></span><span class="sd">.COMPONENT</span><span class="cm">
+</span><span class="cm">   The component this cmdlet belongs to
+</span><span class="cm"></span><span class="sd">.ROLE</span><span class="cm">
+</span><span class="cm">   The role this cmdlet belongs to
+</span><span class="cm"></span><span class="sd">.FUNCTIONALITY</span><span class="cm">
+</span><span class="cm">   The functionality that best describes this cmdlet
+</span><span class="cm"></span><span class="cm">#&gt;</span>
+<span class="k">function</span> <span class="n">Verb</span><span class="n">-Noun</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="k">CmdletBinding</span><span class="p">(</span><span class="n">DefaultParameterSetName</span><span class="p">=</span><span class="s1">&#39;Parameter Set 1&#39;</span><span class="p">,</span>
+                  <span class="n">SupportsShouldProcess</span><span class="p">=</span><span class="nv">$true</span><span class="p">,</span>
+                  <span class="n">PositionalBinding</span><span class="p">=</span><span class="nv">$false</span><span class="p">,</span>
+                  <span class="n">HelpUri</span> <span class="p">=</span> <span class="s1">&#39;http://www.microsoft.com/&#39;</span><span class="p">,</span>
+                  <span class="n">ConfirmImpact</span><span class="p">=</span><span class="s1">&#39;Medium&#39;</span><span class="p">)</span><span class="p">]</span>
+    <span class="p">[</span><span class="k">Alias</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
+    <span class="p">[</span><span class="n">OutputType</span><span class="p">(</span><span class="no">[String]</span><span class="p">)</span><span class="p">]</span>
+    <span class="k">Param</span>
+    <span class="p">(</span>
+        <span class="c"># Param1 help description</span>
+        <span class="p">[</span><span class="k">Parameter</span><span class="p">(</span><span class="k">Mandatory</span><span class="p">=</span><span class="nv">$true</span><span class="p">,</span>
+                   <span class="k">ValueFromPipeline</span><span class="p">=</span><span class="nv">$true</span><span class="p">,</span>
+                   <span class="k">ValueFromPipelineByPropertyName</span><span class="p">=</span><span class="nv">$true</span><span class="p">,</span>
+                   <span class="k">ValueFromRemainingArguments</span><span class="p">=</span><span class="nv">$false</span><span class="p">,</span>
+                   <span class="k">Position</span><span class="p">=</span><span class="n">0</span><span class="p">,</span>
+                   <span class="k">ParameterSetName</span><span class="p">=</span><span class="s1">&#39;Parameter Set 1&#39;</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">ValidateNotNull</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">ValidateNotNullOrEmpty</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">ValidateCount</span><span class="p">(</span><span class="n">0</span><span class="p">,</span><span class="n">5</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">ValidateSet</span><span class="p">(</span><span class="s2">&#34;</span><span class="s2">sun</span><span class="s2">&#34;</span><span class="p">,</span> <span class="s2">&#34;</span><span class="s2">moon</span><span class="s2">&#34;</span><span class="p">,</span> <span class="s2">&#34;</span><span class="s2">earth</span><span class="s2">&#34;</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">Alias</span><span class="p">(</span><span class="s2">&#34;</span><span class="s2">p1</span><span class="s2">&#34;</span><span class="p">)</span><span class="p">]</span>
+        <span class="nv">$Param1</span><span class="p">,</span>
 
-<span class="k">function</span> <span class="nb">Get-Something</span> <span class="p">{</span>
-    <span class="p">[</span><span class="k">cmdletbinding</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
-    <span class="k">param</span><span class="p">(</span>
-        <span class="no">[string]</span><span class="nv">$param1</span>
+        <span class="c"># Param2 help description</span>
+        <span class="p">[</span><span class="k">Parameter</span><span class="p">(</span><span class="k">ParameterSetName</span><span class="p">=</span><span class="s1">&#39;Parameter Set 1&#39;</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">AllowNull</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">AllowEmptyCollection</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">AllowEmptyString</span><span class="p">(</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="n">ValidateScript</span><span class="p">(</span><span class="p">{</span><span class="nv">$true</span><span class="p">}</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">ValidateRange</span><span class="p">(</span><span class="n">0</span><span class="p">,</span><span class="n">5</span><span class="p">)</span><span class="p">]</span>
+        <span class="no">[int]</span>
+        <span class="nv">$Param2</span><span class="p">,</span>
+
+        <span class="c"># Param3 help description</span>
+        <span class="p">[</span><span class="k">Parameter</span><span class="p">(</span><span class="k">ParameterSetName</span><span class="p">=</span><span class="s1">&#39;Another Parameter Set&#39;</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">ValidatePattern</span><span class="p">(</span><span class="s2">&#34;</span><span class="s2">[a-z]*</span><span class="s2">&#34;</span><span class="p">)</span><span class="p">]</span>
+        <span class="p">[</span><span class="k">ValidateLength</span><span class="p">(</span><span class="n">0</span><span class="p">,</span><span class="n">15</span><span class="p">)</span><span class="p">]</span>
+        <span class="no">[String]</span>
+        <span class="nv">$Param3</span>
     <span class="p">)</span>
-    <span class="k">process</span> <span class="p">{</span>
-        <span class="c"># Do something here</span>
+
+    <span class="k">Begin</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+    <span class="k">Process</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$pscmdlet</span><span class="p">.</span><span class="n">ShouldProcess</span><span class="p">(</span><span class="s2">&#34;</span><span class="s2">Target</span><span class="s2">&#34;</span><span class="p">,</span> <span class="s2">&#34;</span><span class="s2">Operation</span><span class="s2">&#34;</span><span class="p">)</span><span class="p">)</span>
+        <span class="p">{</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">End</span>
+    <span class="p">{</span>
     <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="nb">Write-Host</span> <span class="s2">&#34;</span><span class="s2">Hello World!</span><span class="s2">&#34;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+
+<span class="s2">&#34;</span><span class="s2">Single line string</span><span class="s2">&#34;</span>
+
+<span class="p">@</span><span class="err">“</span>
+    <span class="n">Multi</span> <span class="n">line</span> <span class="n">string</span>
+<span class="err">“</span><span class="p">@</span>
+
+<span class="c"># Single line comment</span>
+
+<span class="cm">&lt;#</span><span class="cm">
+</span><span class="cm">    Multi line comment
+</span><span class="cm"></span><span class="cm">#&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>And a check to see if PowerShell syntax highlighting works, and looks properly. The <code>chroma-powershellconsole.css</code> does a good job to make it look like the familiar Windows PowerShell shell.</p>
